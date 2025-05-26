@@ -16,29 +16,22 @@
 
 <body>
 
-    <!-- <div x-data="{title: 'iphone 15 pro max', price: 2000000, quantity: 10}">
-        <div x-data="{ title: 'iphone 13', price: 99999}">
-            <div x-data="{ title: 'galaxy s22' }">
-                <h1 x-text="title"></h1>
-                <h1 x-text="price"></h1>
-                <h1 x-text="quantity"></h1>
-            </div>
-        </div>
-    </div> -->
+    <div x-data="{open : false}">
 
 
-    <div x-data="{ fName :  'shayan' }">
-        <div x-data="{ lName :  'heydari' }">
-            <button @click="showFullName($data)">Show Full Name</button>
-        </div>
+        <!-- <button @click="open = !open">click me</button> -->
+        <!-- <p x-show="open" x-transition> -->
+        <!-- <p x-show="open" x-transition.duration.1000ms> -->
+        <!-- <p x-show="open" x-transition:enter.duration.1000ms x-transition:leave.duration.5000ms> -->
+        <!-- <p x-show="open" x-transition:enter.delay.2500ms> -->
+        <!-- <p x-show="open" x-transition.opacity x-transition.opacity.duration.2500ms> -->
+        <!-- <p x-show="open" x-transition.scale x-transition.scale.duration.2500ms> -->
+        <!-- <p x-show="open" x-transition:enter.scale.20 x-transition.leave.scale.90> -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, accusamus.
+        </p>
+
     </div>
 
-
-    <script>
-        function showFullName({ fName, lName }) {
-            alert(`${fName} ${lName}`);
-        }
-    </script>
 </body>
 
 </html>
