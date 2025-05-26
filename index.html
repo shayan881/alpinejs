@@ -16,25 +16,23 @@
 
 <body>
 
-    <!-- <div x-data @click="alert('hi')">
-        click me
+    <!-- <div x-init="console.log('hi init')"></div> -->
+
+
+    <!-- <div x-data="{ post : {} }"
+        x-init="post = await(await fetch('https://jsonplaceholder.typicode.com/posts/1')).json()">
+        <p x-text="post.title"></p>
     </div> -->
 
-    <!-- store -->
+    <!-- <div x-init="$nextTick(() => { console.log('hi this phas is mmounting') });"></div> -->
 
-    <!-- <div x-data :class="$store.darkMode.on && 'bg-black'">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat sit veniam, eius ipsum repellendus consequatur
-        aliquam dolorem, maiores voluptates cupiditate reprehenderit delectus dolor consequuntur debitis in. Maiores
-        officia quod similique.
-    </div>
-    <button x-data @click="$store.darkMode.toggle()">Click Me</button> -->
+    <!-- <div x-data="{ 
+        init() {
+            console.log('init')
+        }
+      }"></div> -->
 
-    <!-- <div x-data :class="$store.darkMode && 'bg-black'">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat sit veniam, eius ipsum repellendus consequatur
-        aliquam dolorem, maiores voluptates cupiditate reprehenderit delectus dolor consequuntur debitis in. Maiores
-        officia quod similique.
-    </div>
-    <button x-data @click="$store.darkMode = !$store.darkMode">Click Me</button> -->
+    <div x-data="console.log('hi data')" x-init="console.log('hi init')"></div>
 
 </body>
 
