@@ -16,24 +16,29 @@
 
 <body>
 
-    <!-- <div x-init="console.log('hi init')"></div> -->
-
-
-    <!-- <div x-data="{ post : {} }"
-        x-init="post = await(await fetch('https://jsonplaceholder.typicode.com/posts/1')).json()">
-        <p x-text="post.title"></p>
+    <!-- <div x-data="{title: 'iphone 15 pro max', price: 2000000, quantity: 10}">
+        <div x-data="{ title: 'iphone 13', price: 99999}">
+            <div x-data="{ title: 'galaxy s22' }">
+                <h1 x-text="title"></h1>
+                <h1 x-text="price"></h1>
+                <h1 x-text="quantity"></h1>
+            </div>
+        </div>
     </div> -->
 
-    <!-- <div x-init="$nextTick(() => { console.log('hi this phas is mmounting') });"></div> -->
 
-    <!-- <div x-data="{ 
-        init() {
-            console.log('init')
+    <div x-data="{ fName :  'shayan' }">
+        <div x-data="{ lName :  'heydari' }">
+            <button @click="showFullName($data)">Show Full Name</button>
+        </div>
+    </div>
+
+
+    <script>
+        function showFullName({ fName, lName }) {
+            alert(`${fName} ${lName}`);
         }
-      }"></div> -->
-
-    <div x-data="console.log('hi data')" x-init="console.log('hi init')"></div>
-
+    </script>
 </body>
 
 </html>
