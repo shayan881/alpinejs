@@ -5,42 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
     <script src="script.js"></script>
+    <style>
+        .bg-black {
+            background-color: darkblue;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- <div x-data="{
-        open: false,
-        toggle() {
-            this.open = !this.open
-        }
-    }"> -->
-    <div x-data="collapse">
+    <!-- <div x-data @click="alert('hi')">
+        click me
+    </div> -->
 
-        <!-- <button @click="open = !open">collapse</button> -->
-        <button @click="toggle">collapse</button>
-        <div x-show="open">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aperiam cumque consequuntur commodi id
-            unde quam ab, similique recusandae doloremque atque. Error magni nulla asperiores doloribus voluptates
-            adipisci quo incidunt.
-        </div>
+    <!-- store -->
 
-
+    <!-- <div x-data :class="$store.darkMode.on && 'bg-black'">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat sit veniam, eius ipsum repellendus consequatur
+        aliquam dolorem, maiores voluptates cupiditate reprehenderit delectus dolor consequuntur debitis in. Maiores
+        officia quod similique.
     </div>
-    <div x-data="collapse">
+    <button x-data @click="$store.darkMode.toggle()">Click Me</button> -->
 
-        <!-- <button @click="open = !open">collapse</button> -->
-        <button @click="toggle">collapse</button>
-        <div x-show="open">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aperiam cumque consequuntur commodi id
-            unde quam ab, similique recusandae doloremque atque. Error magni nulla asperiores doloribus voluptates
-            adipisci quo incidunt.
-        </div>
-
-
+    <!-- <div x-data :class="$store.darkMode && 'bg-black'">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat sit veniam, eius ipsum repellendus consequatur
+        aliquam dolorem, maiores voluptates cupiditate reprehenderit delectus dolor consequuntur debitis in. Maiores
+        officia quod similique.
     </div>
+    <button x-data @click="$store.darkMode = !$store.darkMode">Click Me</button> -->
 
 </body>
 

@@ -1,10 +1,10 @@
 document.addEventListener('alpine:init', () => {
-    Alpine.data('collapse', () => (
-        {
-            open: false,
-            toggle() {
-                this.open = !this.open
-            }
-        }
-    ));
+    // Alpine.store('darkMode', {
+    //     on: true,
+    //     toggle() {
+    //         this.on = !this.on
+    //     }
+    // })
+
+    Alpine.store('darkMode', false);
 });
